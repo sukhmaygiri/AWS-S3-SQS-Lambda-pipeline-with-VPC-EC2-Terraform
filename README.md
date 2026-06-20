@@ -45,7 +45,6 @@ This project provisions an event-driven pipeline on AWS using Terraform: an obje
     └── fixed-lambda-run.txt            # Verified run after the fix, with CloudWatch output
 ```
 
-> `terraform.tfstate`, `terraform.tfstate.backup`, `lambda/*.zip`, and any `.pem` key files are intentionally excluded from version control — see `.gitignore`. Never commit these; tfstate can contain sensitive values and `.pem` files are private keys.
 
 ## Prerequisites
 
