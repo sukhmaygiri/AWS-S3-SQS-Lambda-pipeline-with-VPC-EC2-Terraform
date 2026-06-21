@@ -71,7 +71,7 @@ Confirm with `yes` when prompted. Terraform provisions the VPC, EC2 instance, S3
 Upload a file to the bucket:
 
 ```bash
-echo "Hello this is my test3file uploading in the s3 bucket" > test3.txt
+echo "Hello this is my test3file uploading in the s3 bucket" > test.txt
 aws s3 cp test.txt s3://sukhmay-demo-bucket-2026-001
 ```
 
