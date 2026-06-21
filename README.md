@@ -37,7 +37,6 @@ This project provisions an event-driven pipeline on AWS using Terraform: an obje
 │   ├── lambda.tf                 # Lambda function + event source mapping 
 │   └── function.py                # Lambda source code (final working version)
 |---screenshots/
-|    ├── architecture-diagram.png
      ├── terraform-apply-success.png
      ├── s3-bucket.png
      ├── s3-upload-test-file.png
