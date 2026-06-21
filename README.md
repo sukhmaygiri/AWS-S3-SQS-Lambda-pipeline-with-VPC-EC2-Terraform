@@ -23,9 +23,7 @@ This project provisions an event-driven pipeline on AWS using Terraform: an obje
 ```
 .
 ├── README.md
-├── .gitignore
-├── docs/
-│   └── architecture-diagram.svg
+|--- architecture-diagram.svg
 ├── terraform/
 │   ├── provider.tf      # AWS provider (ap-south-2)
 │   ├── vpc.tf            # VPC, public subnet, IGW, route table
@@ -36,13 +34,19 @@ This project provisions an event-driven pipeline on AWS using Terraform: an obje
 │   ├── s3_sqs.tf             # SQS queue policy (allows S3 to send messages)
 │   ├── sqs.tf                 # SQS queue
 │   ├── iam.tf                  # Lambda execution role + policy attachments
-│   ├── lambda.tf                 # Lambda function + event source mapping
-│   └── outputs.tf
-├── lambda/
+│   ├── lambda.tf                 # Lambda function + event source mapping 
 │   └── function.py                # Lambda source code (final working version)
-└── logs/
-    ├── initial-lambda-code.txt       # First version - printed raw event, not object name
-    └── fixed-lambda-run.txt            # Verified run after the fix, with CloudWatch output
+|---screenshots/
+|    ├── architecture-diagram.png
+     ├── terraform-apply-success.png
+     ├── s3-bucket.png
+     ├── s3-upload-test-file.png
+     ├── sqs-queue.png
+     ├── lambda-function.png
+     ├── lambda-trigger.png
+     ├── cloudwatch-logs.png
+     ├── ec2-instance.png
+     └── ec2-public-ip-toggle.png
 ```
 
 
